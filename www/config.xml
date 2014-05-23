@@ -79,7 +79,10 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
-
+    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.4.0">
+        <param name="APP_ID" value="634030366671151" />
+        <param name="APP_NAME" value="63af33b6a4c33851a985ab0c89e849b0" />
+    </gap:plugin>
     <!--
         Define access to external domains.
 
