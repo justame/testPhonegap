@@ -44,6 +44,16 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
+        var fbLoginSuccess = function (userData) {
+            alert("UserInfo: " + JSON.stringify(userData));
+        }
+
+        facebookConnectPlugin.login(["basic_info"], 
+            fbLoginSuccess, 
+            function (error) { alert("" + error) }
+        );
+);
+
+        // facebookConnectPlugin.showDialog(Object options, Function success, Function failure)
     }
 };
